@@ -1,0 +1,113 @@
+.headerContainer {
+  width: 100%;
+  min-width: 1280px;
+  //   position: fixed;
+  .headerBox {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-top: 10px;
+    .headerLeft {
+      cursor: pointer;
+      img {
+        height: 55px;
+      }
+      span {
+        padding-left: 10px;
+        font-weight: 600;
+        color: #000000;
+        line-height: 32px;
+        letter-spacing: 6px;
+      }
+    }
+    .headerRight {
+      height: 55px;
+      display: flex;
+      align-items: center;
+      .menuBox {
+        height: 55px;
+        position: relative;
+        font-size: 16px;
+        color: #000000;
+        font-weight: 600;
+        cursor: pointer;
+        &:not(:first-child) {
+          margin-left: 50px;
+        }
+        .menuTitle {
+          span {
+            line-height: 55px;
+            font-size: 12px;
+            margin-left: 10px;
+            transition: all 0.3s;
+          }
+        }
+        .menuItemBox {
+          position: absolute;
+          top: 40px;
+          left: 0;
+          width: 100%;
+
+          .menuItem {
+            height: 22px;
+            font-size: 16px;
+            font-weight: 400;
+            color: #000000;
+            line-height: 22px;
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+      .Button {
+        height: 40px;
+        width: 140px;
+        text-align: center;
+        background-color: #000000;
+        margin-left: 50px;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        cursor: pointer;
+        .buttonText {
+          color: #ffffff;
+          line-height: 18px;
+        }
+        .buttonUnderline {
+          position: absolute;
+          top: 30px;
+          left: 20px;
+          width: 100px;
+          height: 0px;
+          background: linear-gradient(
+            120deg,
+            #037cd6 0%,
+            #037dd6 35%,
+            #85e19b 100%
+          );
+        }
+        &:hover {
+          .buttonText {
+            background: linear-gradient(
+              120deg,
+              #037cd6 0%,
+              #037dd6 35%,
+              #85e19b 100%
+            );
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            transition: all 0.3s;
+          }
+          .buttonUnderline {
+            height: 1px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,77 @@
+.headerContainer {
+  width: 100%;
+  .headerBox {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 65px;
+    background-color: #fff;
+    z-index: 99;
+    .headerLeft {
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      height: 100%;
+      padding-left: 15px;
+      img {
+        height: 35px;
+      }
+      span {
+        padding-left: 15px;
+        font-weight: 600;
+        color: #000000;
+        line-height: 24px;
+        letter-spacing: 6px;
+      }
+    }
+    .headerRight {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      .downloadButton {
+        width: 35px;
+        height: 35px;
+        background-color: #f1f3f4;
+        border-radius: 50%;
+        background-image: url('../../assets/header/icon1.png');
+        background-size: 35px;
+      }
+      .downloadButtonActive {
+        width: 35px;
+        height: 35px;
+        background-color: #f1f3f4;
+        border-radius: 50%;
+        background-image: url('../../assets/header/icon3.png');
+        background-size: 35px;
+      }
+      .MenuButton {
+        margin-left: 15px;
+        width: 35px;
+        height: 35px;
+        margin-right: 15px;
+        background-color: #f1f3f4;
+        border-radius: 50%;
+        background-image: url('../../assets/header/icon2.png');
+        background-size: 35px;
+      }
+      .MenuButtonActive {
+        margin-left: 15px;
+        width: 35px;
+        height: 35px;
+        margin-right: 15px;
+        background-color: #f1f3f4;
+        border-radius: 50%;
+        background-image: url('../../assets/header/icon4.png');
+        background-size: 35px;
+      }
+    }
+  }
+  .menuBox {
+    width: 100%;
+    // background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    background-color: rgb(253, 183, 183);
+    z-index: 10;
+  }
+}

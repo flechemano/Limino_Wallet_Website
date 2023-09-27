@@ -1,0 +1,147 @@
+.Container {
+  width: 100%;
+  height: 500px;
+  background: linear-gradient(90deg, #e4e7e8 0%, #ffffff 76%, #e4e7e8 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  .float {
+    position: absolute;
+    top:-200px;
+  }
+  .L1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      height: 140px;
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+    span {
+      font-size: 60px;
+      font-weight: 600;
+      color: #000000;
+      line-height: 84px;
+    }
+    .logoText {
+      font-size: 60px;
+      padding-left: 10px;
+      font-weight: 600;
+      color: #000000;
+      line-height: 84px;
+      letter-spacing: 20px;
+    }
+  }
+  .ButtonBox {
+    padding-top: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // flex-wrap: wrap;
+    .Button {
+      // flex-shrink: 1;
+      width: 180px;
+      // height: 85px;
+      background: #000000;
+      border-radius: 10px;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-left: 10px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      img {
+        width: 30px;
+        height: 30px;
+        object-fit: contain;
+        margin-left: 10px;
+        margin-right: 10px;
+        // flex-shrink: 1;
+      }
+      .ButtonText {
+        width: 100%;
+        // flex-shrink: 2;
+        .textTop {
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 20px;
+        }
+        .textBottom {
+          font-size: 16px;
+          line-height: 22px;
+        }
+      }
+      &:not(:last-child) {
+        margin-right: 25px;
+      }
+    }
+    .greyButton {
+      width: 180px;
+      // height: 85px;
+      opacity: 0.5;
+      background: #000000;
+      border-radius: 10px;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-left: 10px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      img {
+        width: 50px;
+        height: 50px;
+        object-fit: contain;
+        // flex-shrink: 1;
+      }
+      .ButtonText {
+        width: 100%;
+        // flex-shrink: 2;
+        .textTop {
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 20px;
+        }
+        .textBottom {
+          font-size: 16px;
+          line-height: 22px;
+        }
+      }
+    }
+    .Button:hover {
+      cursor: pointer;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+        rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+      transition: all 0.5s;
+      background: #037cd6;
+    }
+  }
+  .info {
+    padding-top: 90px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #000000;
+    line-height: 28px;
+    .link {
+      text-decoration: underline;
+      &:hover {
+        cursor: pointer;
+        color: #037cd6;
+      }
+    }
+  }
+}
+:global {
+  .ant-modal-close {
+    top: 25px;
+    right: 25px;
+    .ant-modal-close-x {
+      font-size: 30px;
+    }
+  }
+}

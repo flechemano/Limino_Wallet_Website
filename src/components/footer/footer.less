@@ -1,0 +1,177 @@
+.footerContainer {
+  width: 100%;
+  min-width: 1280px;
+  background: linear-gradient(120deg, #037cd6 0%, #037dd6 35%, #85e19b 100%);
+  .footerBox {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    .footerTop {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #ffffff;
+      .footerTopLeft {
+        height: 240px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        img {
+          height: 95px;
+        }
+        span {
+          padding-left: 15px;
+          font-size: 30px;
+          font-weight: 600;
+          color: #ffffff;
+          line-height: 42px;
+          letter-spacing: 12px;
+        }
+      }
+      .footerTopRight {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-start;
+        .footerTopRightItem {
+          padding-top: 20px;
+          .footerTopRightItemTitle {
+            height: 50px;
+            font-size: 20px;
+            font-weight: 600;
+            color: #ffffff;
+            line-height: 50px;
+            &:not(:last-child) {
+              padding-right: 90px;
+            }
+          }
+          .footerTopRightItemContent {
+            height: 40px;
+            font-size: 18px;
+            color: #ffffff;
+            line-height: 40px;
+            &:hover {
+              cursor: pointer;
+              text-decoration: underline;
+            }
+          }
+          .selectbox {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            .google {
+                background-image: url("../../assets/footer/google.png");
+                &:hover {
+                    background-image: url("../../assets/footer/googleL.png");
+                }
+            }
+            .ios {
+                background-image: url("../../assets/footer/apple.png");
+                &:hover {
+                    background-image: url("../../assets/footer/appleL.png");
+                }
+            }
+            .apk {
+                background-image: url("../../assets/footer/android.png");
+                &:hover {
+                    background-image: url("../../assets/footer/androidL.png");
+                }
+            }
+            .downloadButton {
+                background-color: black;
+                color: white;
+                cursor: pointer;
+                width: 40px;
+                height: 40px;
+                font-size: 24px;
+                line-height: 40px;
+                text-align: center;
+                border-radius: 5px;
+                margin-left: 10px;
+                &:hover {
+                    background-color: #037dd6;
+                    transition: all 0.3s;
+                }
+            }
+          }
+        }
+      }
+    }
+    .footerBottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        .footerBottomLeft {
+            height: 40px;
+            font-size: 16px;
+            color: #ffffff;
+            line-height: 40px;
+        }
+        .footerBottomRight {
+            height: 40px;
+            font-size: 16px;
+            color: #ffffff;
+            line-height: 40px;
+            .footerBottomRightItem {
+                margin-left: 10px;
+                margin-right: 10px;
+                cursor: pointer;
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+  }
+}
+:global {
+  #footerSelect {
+    .ant-select-arrow {
+        color: #ffffff;
+    }
+    .ant-select-single:not(.ant-select-customize-input) .ant-select-selector {
+        padding-left: 0px;
+    }
+    .ant-select:not(.ant-select-customize-input) .ant-select-selector {
+        background-color: transparent;
+        border: 1px solid #ffffff;
+    }
+    .ant-select:not(.ant-select-customize-input) .ant-select-selector .ant-select-selection-search-input {
+        height: 40px;
+    }
+    .ant-select-single.ant-select-show-arrow .ant-select-selection-item, .ant-select-single.ant-select-show-arrow .ant-select-selection-placeholder {
+        line-height: 40px;
+        color: #ffffff;
+        font-size: 16px;
+    }
+    .ant-select-single:not(.ant-select-customize-input) .ant-select-selector {
+        height: 40px;
+        border-radius: 5px;
+    }
+    .ant-select-dropdown {
+      padding: 0;
+      background: rgba(255, 255, 255, 0.5);
+      border-radius: 5px;
+    }
+    .ant-select-item {
+        padding: 0px;
+    }
+    .ant-select-item-option-active:not(.ant-select-item-option-disabled) {
+      background: #e9f5fe;
+    }
+    #footerSelItem {
+        height: 40px;
+        line-height: 40px;
+        color: #ffffff;
+        font-size: 18px;
+        padding-left: 50px;
+        background-position: 15px center;
+        background-repeat: no-repeat;
+        &:hover {
+            cursor: pointer;
+            color: #037cd6;
+        }
+    }
+  }
+}
