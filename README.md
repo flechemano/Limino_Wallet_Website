@@ -1,4 +1,4 @@
-# umi project
+# lumi project
 
 ## Getting Started
 
